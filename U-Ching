@@ -1,1 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U Ching Divination</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        #output {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 15px;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Whimsical I Ching Divination</h1>
+    <p>Hold your question in mind and then click the button to receive some delightful insight.</p>
+
+    <button onclick="deriveInsight()">Receive Insight</button>
+
+    <div id="output"></div>
+
+    <script>
+        const whimsicalAnswers = [
+            "A llama told me you're on the right track.",
+            "Ask the dancing banana in your dream.",
+            "Do a handstand. It'll make sense then.",
+            "You need more glitter. And more cowbell.",
+            "Hug a cactus. But metaphorically.",
+            "The otters believe in you.",
+            "Confucius says... don't quote Confucius on this.",
+            "A unicorn just whispered... 'Rainbows'.",
+            "Seek guidance from your breakfast cereal.",
+            "Time to become one with the rubber duck.",
+            "Remember the alpaca's lesson: Fluffiness wins.",
+            "The gnome council has spoken: You rock!",
+            "A wise turtle once said... 'Wait, I forgot.'",
+            "The squirrels are conspiring. Or maybe it's just Tuesday.",
+            "Don a fake mustache. Everything will be clearer.",
+            "The secret is... dance like a flamingo.",
+            "Your pet rock has all the answers.",
+            "Trust the wisdom of the confused walrus.",
+            "Have a chat with an imaginary dragon.",
+            "The answer is hidden in a spaghetti monster's noodle.",
+            "Hedgehogs are spiky. That's your answer. Reflect.",
+            "Embrace the zen of the sleepy sloth.",
+            "Channel the energy of a raving raccoon.",
+            "To find clarity, you must first find pie.",
+            "The owls know. But they're not telling.",
+            "Channel the spirit of the kazoo.",
+            "The penguins have decreed: Slide into it.",
+            "Always listen to jazz-playing giraffes.",
+            "The cat council is currently in recess. Try later.",
+            "Tacos hold the universe's secrets.",
+            "The juggling octopus says to keep things balanced.",
+            "Meditate on the philosophy of the left sock.",
+            "Why not consult the moon-cheese oracle?",
+            "Remember the mantra: 'Dance like a pickle.'",
+            "Envision a world where snails are speedy.",
+            "Harness the grace of the derpy dog.",
+            "Seek wisdom from the wise potato.",
+            "Befriend a philosophical puffin.",
+            "Ponder upon the musings of the mindful moose.",
+            "Ever thought of consulting singing mushrooms?",
+            "Contemplate with the cosmic cactus.",
+            "A goldfish knows... but it forgot.",
+            "Delve deep into the donut's hole.",
+            "Engage in deep chats with a thinking teapot.",
+            "Trust in the logic of the loony lemur.",
+            "Your spirit animal is a quirky quokka. Reflect on that.",
+            "When in doubt, ask the astronaut ants.",
+            "The mountain-moving mole advises patience.",
+            "Seek the counsel of the pancake prophet.",
+            "The whispers of the wind say... 'Eat more cookies.'",
+            "The marshmallow mountains hold the key.",
+            "Do cartwheels. The universe likes cartwheels.",
+            "Befriend a bouncing blueberry for guidance.",
+            "Navigate life's maze with a mischievous mongoose.",
+            "A narwhal knight knows. Seek its nobility.",
+            "Unleash the power of the underwater unicorn.",
+            "The ferocious feather has insights aplenty.",
+            "The snoring snail says to take it slow.",
+            "Let the cosmic cupcake guide you.",
+            "The orbiting ostrich offers a unique perspective.",
+            "Trust in the advice of the all-seeing apple.",
+            "A space shrimp suggests to shoot for the stars.",
+            "Your guide is the galactic guinea pig.",
+            "Revel in the reflections of the radiant rhino.",
+            "The mystic muffin has morsels of wisdom.",
+            "And lastly, believe in the belly of the laughing llama."
+        ];
+
+        function deriveInsight() {
+            const randomNum = Math.floor(Math.random() * whimsicalAnswers.length);
+            const selectedAnswer = whimsicalAnswers[randomNum];
+            document.getElementById('output').innerText = `Your delightful insight is: ${selectedAnswer}`;
+        }
+    </script>
+
+</body>
+
+</html>
